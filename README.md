@@ -31,13 +31,13 @@ using `cout` and `verb` together :
 ```C++
 	cout << "a" << verb << "b";
 ```
-`a` will be printed but for `b` that happens only if `verbose == true`
+`a` will be printed but for `b` that happens only if `verbose == true`. 
 this line returns `Verb`
 
 ```C++
 	verb << "a" << cout << "b";
 ```
-`b` will be printed but for `a` that happens only if `verbose == true`
+`b` will be printed but for `a` that happens only if `verbose == true`. 
 this line returns `ostream`
 ___
 -=-=-=-=-
