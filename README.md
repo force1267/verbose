@@ -1,11 +1,12 @@
 # verbose
 simple C++ -v --verbose switch.
-/\/\/\/\/\/\/\/\/\/\/\
+___
 
 use Verbose namespace :
 ```C++
 	using namespace Verbose;
 ```
+___
 -=-=-=-=-
 
 find -v or --verbose switch :
@@ -14,6 +15,7 @@ find -v or --verbose switch :
 		confirmVerbose(argc ,argv);
 ```
 that will set `Verbose::verbose` to `true` and that's how Verbose knows if program is verbose or not
+___
 -=-=-=-=-
 
 cout something if `verbose == true` :
@@ -22,6 +24,7 @@ cout something if `verbose == true` :
 ```
 you can't use `endl` for new line. (and you better not use it if you only want new line with `cout`)
 use `'\n'` or `vendl` for new line.
+___
 -=-=-=-=-
 
 using `cout` and `verb` together :
@@ -30,12 +33,13 @@ using `cout` and `verb` together :
 ```
 `a` will be printed but for `b` that happens only if `verbose == true`
 this line returns `Verb`
-___
+
 ```C++
 	verb << "a" << cout << "b";
 ```
 `b` will be printed but for `a` that happens only if `verbose == true`
 this line returns `ostream`
+___
 -=-=-=-=-
 
 `verb` to a file :
@@ -47,6 +51,7 @@ this line returns `ostream`
 	file.close();
 ```
 don't forget `#include<fstream>` !
+___
 -=-=-=-=-
 
 EXAMPLE
@@ -68,6 +73,7 @@ int main(){
     file.close();
 }
 ```
+___
 -=-=-=-=-
 force1267@gmail.com
 happy verbing !
