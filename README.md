@@ -56,7 +56,10 @@ ___
 
 EXAMPLE
 ```C++
+#include<iostream>
 #include<fstream>
+#include"verbose"
+using namespace std;
 using namespace Verbose;
 int main(){
     verbose = false;
